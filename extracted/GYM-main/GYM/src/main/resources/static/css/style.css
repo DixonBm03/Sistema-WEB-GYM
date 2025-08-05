@@ -1,0 +1,564 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.row {
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.col {
+    width: 45%;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.description {
+    margin-top: 5px;
+    font-size: 28px;
+    color: #474747;
+}
+
+.logo-inicio {
+    width: 70%;
+}
+
+.top-bar {
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo-title img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.logo-title h1 {
+    color: yellow;
+    font-size: 2em;
+    margin: 10px;
+}
+
+.container {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container[id="inicio"] {
+    justify-content: flex-end;
+    display: inline-block;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: right;
+    padding-top: 20px;
+    box-sizing: border-box;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.main-title {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-title h2 {
+    color: yellow;
+    background-color: black;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.form-container {
+    background-color: darkgrey;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    width: 30%;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    margin: 10px 0 5px;
+}
+
+.form-container input, select {
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#guardar {
+    background-color: darkgreen;
+    color: white;
+}
+
+#limpiar {
+    background-color: #555555;
+    color: white;
+}
+
+#actualizar {
+    background-color: blue;
+    color: white;
+}
+
+.table-container {
+    width: 50%;
+    margin: 20px auto;
+    position: relative;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: darkgrey;
+    color: white;
+}
+
+td {
+    background-color: white;
+}
+
+#eliminar {
+    position: absolute;
+    right: -100px;
+    top: 0;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.instructor-form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.instructor-form-column {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.instructor-form-column label {
+    margin-top: 5px;
+}
+
+.instructor-form-column input {
+    padding: 4px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.8em;
+}
+
+.instructor-form-container {
+    background-color: darkgrey;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+    width: 40%;
+}
+
+.instructor-container {
+    align-items: center;
+}
+
+.instructor-button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.instructor-table-container {
+    width: 55%;
+    margin-left: 20px;
+    position: relative;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+#eliminar {
+    position: absolute;
+    right: -80px;
+    top: 0;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.cliente-form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cliente-form-column {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cliente-form-column label {
+    margin-top: 5px;
+}
+
+.cliente-form-column input {
+    padding: 4px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid darkgrey;
+    font-size: 0.8em;
+}
+
+.cliente-form-container {
+    align-items: center;
+    background-color: darkgrey;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+    width: 40%;
+}
+
+.cliente-button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cliente-button-container button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cliente-table-container {
+    width: 55%;
+    margin-left: 20px;
+    position: relative;
+}
+
+.cliente-table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cliente-table-container th, .cliente-table-container td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+    font-size: 0.8em;
+}
+
+#eliminar {
+    position: absolute;
+    right: -80px;
+    top: 0;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+.instructor-button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.instructor-button-container button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#eliminar {
+    position: absolute;
+    right: -80px;
+    top: 0;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.cliente-button-container button {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cliente-button-container button:hover {
+    background-color: #bcbc14;
+}
+
+.cliente-button-container button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+#eliminar {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#eliminar:hover {
+    background-color: #ff4d4d;
+}
+
+#eliminar:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px 0px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+#der {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.login-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.login-form {
+    background-color: #FFF;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: auto;
+    text-align: center;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: yellow;
+    box-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    color: black;
+    background-color: yellow;
+}
+
+/* Navigation menu */
+.nav-menu {
+    background-color: #222;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.nav-menu a,
+.nav-menu button {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #333;
+    border: none;
+}
+
+.nav-menu a:hover,
+.nav-menu button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Generic table styling for CRUD pages */
+.crud-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.crud-table th,
+.crud-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.crud-table th {
+    background-color: #f4f4f4;
+}
+
+.crud-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
