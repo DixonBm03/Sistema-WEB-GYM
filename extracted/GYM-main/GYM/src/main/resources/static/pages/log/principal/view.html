@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <title>GYM Inicio</title>
+    <script src="controller.js"></script>
+</head>
+<body>
+<!-- Franja superior -->
+<div class="top-bar">
+    <div class="logo-title">
+        <img src="../../../images/maquinaimage.jpg" alt="Logo Instructores">
+        <h1>Inicio</h1>
+    </div>
+    <nav class="nav-menu">
+        <button onclick="window.location.href='../instructor/view.html'">Instructores</button>
+        <button onclick="window.location.href='../clientes/view.html'">Clientes</button>
+        <button onclick="window.location.href='../cursos/view.html'">Cursos</button>
+        <button onclick="window.location.href='../maquinas/view.html'">Maquinas</button>
+        <button onclick="window.location.href='../membresia/view.html'">Membresia</button>
+        <button onclick="window.location.href='../rutinas/view.html'">Rutinas</button>
+        <button onclick="window.location.href='../bitacora/view.html'">Bitacora</button>
+        <button onclick="window.location.href='../historialCursos/view.html'">Historial Cursos</button>
+        <button id="misRutinasButton" onclick="window.location.href='../rutinasDeClientes/view.html'">Mis Rutinas</button>
+        <button id="misCursosButton" onclick="window.location.href='../historialCursosDeCliente/view.html'">Mis Cursos</button>
+        <button id="logoutButton" onclick="window.location.href='http://localhost:8080/'">Salir</button>
+        <button id="desin" onclick="window.location.href='http://localhost:8080/'">Desinscribirse</button>
+    </nav>
+</div>
+
+<div id="inicio">
+     <div class="main-title">
+        <h2>Bienvenido al Sistema Gym Wellness Sky Bumstead!!!</h2>
+    </div>
+    <br>
+    <div style="display: flex; justify-content: center; align-items: flex-start; height: 400px;">
+        <img src="../../../images/logo_gym.png" style="height: 100%;"/>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>Sistema Gym Wellness Sky Bumstead</p>
+</div>
+
+<!-- Mover el script aquí -->
+<script src="controller.js"></script>
+
+</body>
+</html>
